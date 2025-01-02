@@ -3,64 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohith J - AI & ML Engineer</title>
+    <title>Rohith J - AI Engineer & Technical Writer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(120deg, #4F46E5, #06B6D4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hover-card {
+            transition: transform 0.3s ease;
+        }
+        .hover-card:hover {
+            transform: translateY(-5px);
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-10">
+<body class="bg-gray-50 scroll-smooth">
+    <!-- Fixed Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-lg fixed w-full z-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between">
                 <div class="flex space-x-7">
                     <div class="flex items-center py-4">
-                        <span class="font-semibold text-gray-800 text-lg">Rohith J</span>
+                        <span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500 text-xl">RJ</span>
                     </div>
                 </div>
-                <div class="flex items-center space-x-3">
-                    <a href="#about" class="py-4 px-2 text-gray-700 hover:text-blue-600">About</a>
-                    <a href="#experience" class="py-4 px-2 text-gray-700 hover:text-blue-600">Experience</a>
-                    <a href="#projects" class="py-4 px-2 text-gray-700 hover:text-blue-600">Projects</a>
-                    <a href="#achievements" class="py-4 px-2 text-gray-700 hover:text-blue-600">Achievements</a>
+                <div class="flex items-center space-x-6">
+                    <a href="#about" class="py-4 px-2 text-gray-700 hover:text-indigo-600 transition duration-300">About</a>
+                    <a href="#experience" class="py-4 px-2 text-gray-700 hover:text-indigo-600 transition duration-300">Experience</a>
+                    <a href="#projects" class="py-4 px-2 text-gray-700 hover:text-indigo-600 transition duration-300">Projects</a>
+                    <a href="#achievements" class="py-4 px-2 text-gray-700 hover:text-indigo-600 transition duration-300">Achievements</a>
+                    <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-12 bg-gradient-to-r from-blue-50 to-indigo-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center">
-                <h1 class="text-4xl font-bold text-gray-800">Rohith J</h1>
-                <p class="mt-4 text-xl text-gray-600">AI & Machine Learning Engineer</p>
-                <div class="mt-6 space-x-4">
-                    <a href="mailto:jeevananthamrohith@gmail.com" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Contact Me</a>
-                    <a href="https://github.com" target="_blank" class="inline-block bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-900">GitHub</a>
-                    <a href="https://linkedin.com" target="_blank" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">LinkedIn</a>
-                </div>
+    <!-- Hero Section with Animated Background -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-cyan-50">
+        <div class="max-w-6xl mx-auto px-4 py-32 text-center">
+            <h1 class="text-6xl font-bold mb-6">
+                <span class="gradient-text">Rohith J</span>
+            </h1>
+            <p class="text-2xl text-gray-600 mb-8">AI Engineer & Technical Writer</p>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-12">
+                Crafting innovative solutions in AI, Machine Learning, and Technical Documentation
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#contact" class="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-lg hover:shadow-xl">
+                    Get in Touch
+                </a>
+                <a href="#projects" class="bg-white text-indigo-600 px-8 py-3 rounded-lg hover:bg-gray-50 transition duration-300 shadow-lg hover:shadow-xl border border-indigo-200">
+                    View Projects
+                </a>
+            </div>
+            <div class="mt-12 flex justify-center space-x-6">
+                <a href="https://github.com" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="mailto:jeevananthamrohith@gmail.com" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-16">
+    <!-- Latest Role Announcement -->
+    <section class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">About Me</h2>
-            <p class="text-gray-600 leading-relaxed">
-                Passionate and driven technology enthusiast with a strong foundation in Python, machine learning, and computer vision. 
-                Currently pursuing B.Tech in Computer Science and Engineering at Shiv Nadar University, Chennai. Skilled in predictive 
-                modeling, data analysis, and database management, with expertise in AI, especially in generative AI and LLMs.
-            </p>
-            <div class="mt-8">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Technical Skills</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="bg-white p-4 rounded-lg shadow">
-                        <h4 class="font-semibold text-gray-700 mb-2">Languages</h4>
-                        <p class="text-gray-600">C, Java, Python, SQL, C++</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow">
-                        <h4 class="font-semibold text-gray-700 mb-2">Frameworks & Libraries</h4>
-                        <p class="text-gray-600">NLTK, spaCy, transformers, TensorFlow-Keras, PyTorch, scikit-learn, Pandas, NumPy, OpenCV</p>
+            <div class="bg-gradient-to-r from-indigo-50 to-cyan-50 p-8 rounded-2xl shadow-lg">
+                <div class="max-w-3xl mx-auto text-center">
+                    <span class="text-indigo-600 font-semibold">Latest Update</span>
+                    <h2 class="text-3xl font-bold mt-2 mb-4">Technical Writer at Qdrant Solutions GmbH 🚀</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Creating impactful content on AI, machine learning, and vector search technologies while contributing to 
+                        Qdrant's innovative solutions.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full text-indigo-600 text-sm font-medium">#TechnicalWriting</span>
+                        <span class="px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full text-indigo-600 text-sm font-medium">#AI</span>
+                        <span class="px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full text-indigo-600 text-sm font-medium">#MachineLearning</span>
+                        <span class="px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full text-indigo-600 text-sm font-medium">#VectorSearch</span>
                     </div>
                 </div>
             </div>
@@ -70,51 +102,113 @@
     <!-- Experience Section -->
     <section id="experience" class="py-16 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">Experience</h2>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-xl font-semibold text-gray-800">Research and Development Intern</h3>
-                <p class="text-gray-600">o9 Solutions | May 2024 – Dec 2024</p>
-                <ul class="mt-4 space-y-2">
-                    <li class="text-gray-600">• Developed and optimized chunking methodologies, improving text processing speed by 40%</li>
-                    <li class="text-gray-600">• Built Graph-based RAG systems, boosting AI model accuracy by 30%</li>
-                    <li class="text-gray-600">• Fine-tuned prompts to enhance AI-generated response accuracy by 20%</li>
-                </ul>
+            <h2 class="text-3xl font-bold text-center mb-12">Professional Experience</h2>
+            <div class="space-y-8">
+                <!-- Qdrant Role -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-card">
+                    <div class="flex flex-col md:flex-row md:items-start">
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-800">Technical Writer</h3>
+                            <p class="text-indigo-600 font-semibold mb-4">Qdrant Solutions GmbH | 2024 - Present</p>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                                    <span>Creating comprehensive technical documentation for vector search technologies</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                                    <span>Developing tutorials and guides for machine learning implementations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                                    <span>Contributing to knowledge base development and documentation strategy</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- o9 Solutions Role -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-card">
+                    <div class="flex flex-col md:flex-row md:items-start">
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-800">Research and Development Intern</h3>
+                            <p class="text-indigo-600 font-semibold mb-4">o9 Solutions | May 2024 – Dec 2024</p>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                                    <span>Developed chunking methodologies, improving processing speed by 40%</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                                    <span>Built Graph-based RAG systems, boosting AI model accuracy by 30%</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                                    <span>Fine-tuned prompts to enhance AI-generated response accuracy by 20%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16">
+    <section id="projects" class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold text-gray-800">Araycci – AI-Powered Research Assistant</h3>
-                    <p class="text-gray-600 mt-2">
-                        Engineered a multilingual AI research assistant utilizing LLaMA3, reducing research time by 70% through 
-                        automated document processing and content retrieval.
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Araycci Project -->
+                <div class="bg-gradient-to-br from-indigo-50 to-cyan-50 p-8 rounded-2xl shadow-lg hover-card">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Araycci – AI Research Assistant</h3>
+                    <p class="text-gray-600 mb-6">
+                        Multilingual AI research assistant using LLaMA3, reducing research time by 70% through automated processing.
                     </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/60 rounded-full text-indigo-600 text-sm">LLaMA3</span>
+                        <span class="px-3 py-1 bg-white/60 rounded-full text-indigo-600 text-sm">NLP</span>
+                        <span class="px-3 py-1 bg-white/60 rounded-full text-indigo-600 text-sm">ML</span>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold text-gray-800">Financial Assistant</h3>
-                    <p class="text-gray-600 mt-2">
-                        Developed an intelligent financial assistant integrating LLM-based chatbot, OCR, and transaction 
-                        categorization, achieving 90% accuracy in document classification.
+
+                <!-- Financial Assistant -->
+                <div class="bg-gradient-to-br from-indigo-50 to-cyan-50 p-8 rounded-2xl shadow-lg hover-card">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Financial Assistant</h3>
+                    <p class="text-gray-600 mb-6">
+                        Intelligent financial assistant with LLM-based chatbot and OCR, achieving 90% accuracy in document classification.
                     </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/60 rounded-full text-indigo-600 text-sm">LLM</span>
+                        <span class="px-3 py-1 bg-white/60 rounded-full text-indigo-600 text-sm">OCR</span>
+                        <span class="px-3 py-1 bg-white/60 rounded-full text-indigo-600 text-sm">AI</span>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold text-gray-800">Skin Disease Detection</h3>
-                    <p class="text-gray-600 mt-2">
-                        Implemented a computer vision-based diagnostic tool achieving 85% accuracy and reducing diagnosis 
-                        time by 75% using deep learning techniques.
+
+                <!-- Skin Disease Detection -->
+                <div class="bg-gradient-to-br from-indigo-50 to-cyan-50 p-8 rounded-2xl shadow-lg hover-card">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Skin Disease Detection</h3>
+                    <p class="text-gray-600 mb-6">
+                        Computer vision-based diagnostic tool achieving 85% accuracy using deep learning techniques.
                     </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/60 rounded-full text-indigo-600 text-sm">Computer Vision</span>
+                        <span class="px-3 py-1 bg-white/60 rounded-full text-indigo-600 text-sm">Deep Learning</span>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold text-gray-800">Virtual Shopping Mart</h3>
-                    <p class="text-gray-600 mt-2">
-                        Built an interactive shopping system using YOLOv3, MediaPipe, and OpenCV for real-time hand 
-                        gesture recognition with 70% accuracy.
+
+                <!-- Virtual Shopping Mart -->
+                <div class="bg-gradient-to-br from-indigo-50 to-cyan-50 p-8 rounded-2xl shadow-lg hover-card">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Virtual Shopping Mart</h3>
+                    <p class="text-gray-600 mb-6">
+                        Interactive shopping system using YOLOv3 and MediaPipe for real-time hand gesture recognition.
                     </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/60 rounded-full text-indigo-600 text-sm">YOLO</span>
+                        <span class="px-3 py-1 bg-white/60 rounded-full text-indigo-600 text-sm">OpenCV</span>
+                        <span class="px-3 py-1 bg-white/60 rounded-full text-indigo-600 text-sm">MediaPipe</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,36 +217,7 @@
     <!-- Achievements Section -->
     <section id="achievements" class="py-16 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">Achievements</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold text-gray-800">LablabAI LLaMA 3 Hackathon</h3>
-                    <p class="text-gray-600 mt-2">Top 10 among 7,509 participants in international generative AI hackathon</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold text-gray-800">OpenHack2024 – IISc Bangalore</h3>
-                    <p class="text-gray-600 mt-2">Top 10 position in national-level hackathon with 200+ teams</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>© 2024 Rohith J. All rights reserved.</p>
-            <div class="mt-4">
-                <a href="mailto:jeevananthamrohith@gmail.com" class="text-gray-400 hover:text-white mx-2">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-white mx-2">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-white mx-2">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+            <h2 class="text-3xl font-bold text-center mb-12">Achievements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- LablabAI Hackathon -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover
